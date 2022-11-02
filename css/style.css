@@ -1,0 +1,133 @@
+body {
+    background: rgb(242 240 232);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #363232;
+}
+
+.search-form {
+    width: 600px;
+    height: 80px;
+    margin: 30px auto 30px auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(216 230 200);
+    border-radius: 15px;
+}
+
+.input-userName {
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 0 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.input-userName:focus {
+    background-color: rgb(169, 238, 234);
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.button,
+.error-card__btn {
+    width: 260px;
+    height: 40px;
+    border-radius: 15px;
+    background: rgb(163 227 202);
+    font-size: 20px;
+    border: 2px solid #5b5858;
+    cursor: pointer;
+}
+
+.error-card__btn {
+    display: block;
+    width: 160px;
+    margin: 0 auto;    
+}
+
+.button:hover,
+.error-card__btn:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.611);
+    transition: 8ms;
+}
+
+.button:active,
+.error-card__btn:active {
+    background: rgb(147, 33, 33);
+    transition: 8ms;
+}
+
+.user-info {
+    position: relative;
+    margin: 0 20px;
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.user-info__title {
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.user-info__card {
+    margin-top: 70px;
+    border: 2px solid #5b5858;
+    border-radius: 15px;
+    padding: 10px 10px 0 10px;
+    background: rgb(181 229 212);
+}
+
+.user-info__card-img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.user-info__card-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.user-info__card-text_bold {
+    font-weight: 700;
+}
+
+.error {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(50, 50, 100, 0.5);
+    display: none;
+}
+
+.show-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-card {
+    width: 500px;
+    border: 2px solid #5b5858;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgb(230, 200, 200);
+}
+
+.error-card__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
